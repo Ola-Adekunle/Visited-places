@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "concurrently": "^9.0.1",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  },
+  "name": "visited-places-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon BACKEND/app.js",
+    "client": "npm start --prefix FRONTEND",
+    "dev": "concurrently \"npm start\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
